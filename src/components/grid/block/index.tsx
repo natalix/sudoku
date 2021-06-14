@@ -3,15 +3,12 @@ import React, { FC } from 'react'
 import { Container } from './styles'
 
 interface IProps {
-    colIndex: number
-    rowIndex: number
+  colIndex: number
+  rowIndex: number
 }
 
-const Block: FC<IProps> = ( { colIndex, rowIndex }) => {
-
-    return (
-        <Container data-cy={`block-${rowIndex}-${colIndex}`}>1</Container>
-    )
+const Block: FC<IProps> = ({ colIndex, rowIndex }) => {
+  return <Container data-cy={`block-${rowIndex}-${colIndex}`}>0</Container>
 }
 
 export default Block
